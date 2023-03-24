@@ -21,7 +21,7 @@
       //read table question
       public function Read()
       {
-        $query = "SELECT * FROM cauhoi ORDER BY id_cauhoi DESC";
+        $query = "SELECT * FROM cauhoi ORDER BY id_cauhoi ASC";
         $stmt  = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt; 
